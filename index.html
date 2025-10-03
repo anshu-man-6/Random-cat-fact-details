@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <!-- Basic SEO -->
+  <!-- SEO & Meta Tags -->
   <title>Cat Facts AI - Fun Random Cat Facts Generator</title>
   <meta name="google-site-verification" content="8fKGOzUytPwbNsgeBgcSsuDl-xDC0Q31EU5wc5vnKsM" />
   <meta name="description" content="Cat Facts AI – Generate amazing random cat facts with AI. Save favorites, view history, and share facts. Perfect for cat lovers!">
@@ -17,7 +17,7 @@
   <meta property="og:description" content="Generate amazing random cat facts with AI. Save favorites, view history, and share!">
   <meta property="og:url" content="https://random-cat-fact-details.onrender.com">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="https://random-cat-fact-details.onrender.com/preview.png"> <!-- Optional preview image -->
+  <meta property="og:image" content="https://random-cat-fact-details.onrender.com/preview.png">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
@@ -25,27 +25,49 @@
   <meta name="twitter:description" content="Generate amazing random cat facts with AI. Save favorites, view history, and share!">
   <meta name="twitter:image" content="https://random-cat-fact-details.onrender.com/preview.png">
 
-  <!-- Stylesheet -->
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="firstapicall.css">
 
-  <!-- Favicon (optional) -->
+  <!-- Favicon -->
   <link rel="icon" href="favicon.ico" type="image/x-icon">
 </head>
 <body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <h1 class="logo"><i class="fas fa-cat"></i> Cat Facts AI</h1>
+      <p class="tagline">Discover fascinating cat facts powered by AI!</p>
+    </div>
+  </nav>
 
-  <h1>🐱 Cat Facts AI</h1>
-  <p>Generate fun and amazing random cat facts powered by AI.</p>
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Get Random Facts About Cats 🐱</h2>
+    <p class="hero-desc">Click the button below to generate amazing, fun, and random cat facts that will surprise you every time!</p>
+    <button id="btn"><i class="fas fa-bolt"></i> Generate New Fact</button>
+  </section>
 
-  <button id="btn">Generate New Fact</button>
+  <!-- Fact Box -->
+  <section class="fact-section">
+    <div class="box">
+      <p class="initial-text">Your cat fact will appear here...</p>
+    </div>
+  </section>
 
-  <div class="box"></div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Cat Facts AI | Made with <i class="fas fa-heart"></i> for cat lovers</p>
+  </footer>
 
-  <!-- Axios Library -->
+  <!-- Axios -->
   <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
-
-  <!-- Your existing JS logic -->
+  <!-- Custom JS -->
   <script src="firstapicall.js"></script>
-
 </body>
 </html>
-
